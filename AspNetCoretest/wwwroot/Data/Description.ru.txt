@@ -1,0 +1,6 @@
+ Описание:
+ Это пример достаточно простого для реализации и использования решения для домашнего климат контроля. 
+ Необходимые компоненты:
+                 -NodeMCU v.3 Wi-Fi Microcontroller
+                 -DHT22 Temperature/Humidity Universal Senasor
+                 -One channel 5VDC/220-250VAC relay

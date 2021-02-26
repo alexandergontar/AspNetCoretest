@@ -1,0 +1,43 @@
+﻿
+@model AspNetCoretest.Models.Unit
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@{
+    string mesg = Model.Firstrequest;
+    string mesg2 = Model.Usercomment;
+}
+<!--@{
+  for(int i=0; i<5; i++)
+    {//mesg=mesg+append;
+      <p> line @i</p>
+    }
+}-->
+
+<h1 class="display-4 text-center">@localizer["Welcome"]</h1>
+
+<div class="text-center">
+
+    <h3>@localizer["Description"]</h3>
+    <br><br><br><br><br><br><br><br>
+
+         <h5 style="color:lightseagreen">@mesg</h5>
+         <h5 style="color:lightseagreen">@mesg2</h5>
+</div>
+<!--<input id="Submit1" type="submit" value="submit" onclick="avgs()"/>-->
+<br>
+<br>
+<p class="aligncenter">
+    
+</p>
+<script>
+    function avgs() {
+        for (var i = 0; i <= 2; i++) {
+            alert("Clicked!" + i.toString());
+        }
+    }
+</script>

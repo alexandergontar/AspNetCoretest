@@ -1,0 +1,75 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+@model AspNetCoretest.Models.UserForm
+
+@{
+    ViewData["Title"] = @localizer["Title"];
+}
+
+<h3>@ViewData["Title"]</h3>
+
+<p>@localizer["Descr"]</p>
+<!--
+<form method="POST">
+    <label for="firstName">Your first name</label>
+    <input type="text" id="firstName" placeholder="Your name goes here" name="FirstName" /><br>
+    <textarea name="UserComment" rows="5" cols="30" title="Type your text here">
+    </textarea><br>
+    <input type="submit" />
+</form>
+-->
+<form asp-action="Privacy" asp-controller="Home">
+    <label>@localizer["Name"] </label>
+    <input asp-for="FirstName" placeholder=@localizer["Placeholder"] /><br>
+    <textarea asp-for="UserComment" rows="3" cols="50" title="Type your text here"> 
+    </textarea><br>
+    <input type="submit" value="OK" />
+</form>
+<br>
+<!--
+<dl class="row">
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.FirstName)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.FirstName)
+    </dd>
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.UserComment)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.UserComment)
+
+    </dd>
+</dl>
+-->
+<!--
+<textarea id="TextArea1" rows="10" cols="60" readonly="readonly">
+@Html.DisplayFor(model => model.UserComment)
+</textarea>
+<div style="white-space: pre-line; width: 200px; background-color:cadetblue;">@Html.DisplayFor(model => model.UserComment)</div>
+-->
+<div id="message" style="white-space: pre-line; width: 400px; height: 200px;
+background-color:aqua; overflow:auto; border:groove;
+margin-left:4px; padding: 11px;">
+    @foreach (var item in Model.usercomments.comments)
+    {
+        <!--
+                <b> @Html.DisplayFor(modelItem => item.Name)</b>
+                <p> @Html.DisplayFor(modelItem => item.Message)</p>
+                <p> @Html.DisplayFor(modelItem => item.MessTime)</p>
+        -->
+
+        <b> @Html.DisplayFor(modelItem => item.Name) </b>
+        <space>  @Html.DisplayFor(modelItem => item.MessTime)</space>
+
+        <space style="font-style: italic; white-space:normal;"> @Html.DisplayFor(modelItem => item.Message)</space>
+    }
+</div>
+<script>
+    /* window.onload = function () {
+         var objDiv = document.getElementById("message");
+         objDiv.scrollTop = objDiv.scrollHeight;
+     }*/
+</script>
+

@@ -1,0 +1,7 @@
+ Description:
+ This is a basic home climat control solution simple enough to implement and use. 
+ Hardware needed:
+                 -NodeMCU v.3 Wi-Fi Microcontroller
+                 -DHT22 Temperature/Humidity Universal Senasor
+                 -One channel 5VDC/220-250VAC relay
+
