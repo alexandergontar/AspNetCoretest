@@ -1,11 +1,12 @@
-﻿
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
 @model AspNetCoretest.Models.Unit;
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = @localizer["WebTitle"];
 }
 
-<h1>Details</h1>
+<h1>@localizer["WebTitle"]</h1>
 <div>
     <h4>Unit</h4>
     <hr />
@@ -35,10 +36,15 @@
             @Html.DisplayFor(model => model.PublishDate)
         </dd>
     </dl>
+    <h3>@localizer["MobView"]</h3>
     <div style="display:inline">
-    <img src="~/Img/web_mob1.JPG" width="400" height="600" /> 
-    <img src="~/Img/web_mob2.JPG" width="400" height="600" /> 
-    </div>
+        <img src="~/Img/web_mob1.JPG" width="400" height="600" />
+        <img src="~/Img/web_mob2.JPG" width="400" height="600" />
+    </div> <br>
+           <h3>@localizer["DeskView"]</h3>
+    <p>
+        <img src="~/Img/web_desk.jpg" width="800" height="500" style="border:5px solid black" />
+    </p>
     <table>
         <thead>
             <tr>
