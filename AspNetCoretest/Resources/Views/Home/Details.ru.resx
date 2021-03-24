@@ -132,6 +132,9 @@
   <data name="Description" xml:space="preserve">
     <value>Описание проекта</value>
   </data>
+  <data name="Desktop" xml:space="preserve">
+    <value>Управление счерез десктоп приложение</value>
+  </data>
   <data name="Diagram" xml:space="preserve">
     <value>Ниже схема подключения</value>
   </data>
@@ -146,5 +149,8 @@
   </data>
   <data name="Web" xml:space="preserve">
     <value>Веб Интерфейс</value>
+  </data>
+  <data name="Xamarin" xml:space="preserve">
+    <value>Мобильное приложение на Xamarin</value>
   </data>
 </root>

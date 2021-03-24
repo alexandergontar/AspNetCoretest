@@ -117,40 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Arduino" xml:space="preserve">
-    <value>Arduino Controller C++ source code</value>
-  </data>
-  <data name="Basic" xml:space="preserve">
-    <value>Basic Home Climat Control Example</value>
-  </data>
-  <data name="Click" xml:space="preserve">
-    <value>Click on the button below to see remote controle solutuons.</value>
-  </data>
-  <data name="Contents" xml:space="preserve">
-    <value>Contents:</value>
-  </data>
-  <data name="Description" xml:space="preserve">
-    <value>Project Description</value>
-  </data>
   <data name="Desktop" xml:space="preserve">
-    <value>Desktop App Control</value>
-  </data>
-  <data name="Diagram" xml:space="preserve">
-    <value>Here is a wiring diagram</value>
-  </data>
-  <data name="Esp" xml:space="preserve">
-    <value>ESP8288 wiring and programming:</value>
-  </data>
-  <data name="Introduction" xml:space="preserve">
-    <value>Introduction</value>
-  </data>
-  <data name="Remote" xml:space="preserve">
-    <value>Remote controle</value>
-  </data>
-  <data name="Web" xml:space="preserve">
-    <value>Web Interface</value>
-  </data>
-  <data name="Xamarin" xml:space="preserve">
-    <value>Xamarin Mobile App</value>
+    <value>Десктоп Приложение</value>
   </data>
 </root>

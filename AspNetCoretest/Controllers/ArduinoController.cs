@@ -18,6 +18,11 @@ namespace AspNetCoretest.Controllers
             return "This is the Arduino Products";
         }
 
+        public IActionResult Desktop() 
+        {
+            return View();
+        }
+
         public IActionResult Details()
         {
             Unit unit = new Unit() 
