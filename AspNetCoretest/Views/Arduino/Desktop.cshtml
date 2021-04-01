@@ -2,7 +2,22 @@
 @inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
 @model AspNetCoretest.Models.Unit;
 
+@using System.IO
+@{
+    string path;
+    string content;
+}
+@{
+    path = Model.sourceDesktopFile;     
+    content = File.ReadAllText(path);    
+}
+
 <h2>@localizer["Desktop"]</h2>
 <p>
     <img src="~/Img/Desktop1.png" width="800" height="500" style="border:5px solid black" />
 </p>
+<p>@Html.DisplayFor(x => x.Id)</p>
+
+<div>
+    <pre style="font-weight: bold; font-size: 18px">@content</pre>
+</div>

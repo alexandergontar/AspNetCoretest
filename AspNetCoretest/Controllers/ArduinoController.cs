@@ -4,11 +4,21 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using AspNetCoretest.Models;
+using System.Globalization;
+using Microsoft.AspNetCore.Hosting;
+using System.IO;
 
 namespace AspNetCoretest.Controllers
 {
     public class ArduinoController : Controller
     {
+       // CultureInfo cultInfo;
+        IWebHostEnvironment Environment;
+
+        public ArduinoController(IWebHostEnvironment _environment) 
+        {
+            Environment = _environment;
+        }
         public IActionResult Index()
         {
             return View();
@@ -18,9 +28,16 @@ namespace AspNetCoretest.Controllers
             return "This is the Arduino Products";
         }
 
-        public IActionResult Desktop() 
+        public IActionResult Desktop(Unit unit) 
         {
-            return View();
+            string wwwPath = this.Environment.WebRootPath;
+            string cc = CultureInfo.CurrentCulture.Name;
+            if (cc.IndexOf("en") != -1)
+                unit.sourceDesktopFile = Path.Combine(wwwPath, "data", "Desktop.txt");
+                 else
+                  unit.sourceDesktopFile = Path.Combine(wwwPath, "data", "Desktop.ru.txt");
+            unit.Id = 113;
+            return View(unit);
         }
 
         public IActionResult Details()

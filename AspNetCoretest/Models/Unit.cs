@@ -10,6 +10,7 @@ namespace AspNetCoretest.Models
 {
     public class Unit
     {
+        public string sourceDesktopFile { get; set; }
         public string sourceFile { get; set; }
         public string sourceFile1 { get; set; }
         public string Firstrequest { get; set; }

@@ -17,7 +17,7 @@ namespace AspNetCoretest.Controllers
 {
     public class HomeController : Controller
     {
-        CultureInfo cultInfo;
+        //CultureInfo cultInfo;
         IWebHostEnvironment Environment;
         private readonly ILogger<HomeController> _logger;
 
