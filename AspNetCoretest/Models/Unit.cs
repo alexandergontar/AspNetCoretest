@@ -10,11 +10,12 @@ namespace AspNetCoretest.Models
 {
     public class Unit
     {
-        public string sourceDesktopFile { get; set; }
-        public string sourceFile { get; set; }
+        public string sourceWebInt { get; set; } //Webinterface descr textfile
+        public string sourceDesktopFile { get; set; }//Desktop descr textfile
+        public string sourceFile { get; set; } 
         public string sourceFile1 { get; set; }
-        public string Firstrequest { get; set; }
-        public string Usercomment { get; set; }
+        public string Firstrequest { get; set; }//cookies
+        public string Usercomment { get; set; }//coocies
         public int Id { get; set; }
         public string Title { get; set; }
         public string Genre { get; set; }

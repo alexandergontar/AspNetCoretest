@@ -40,18 +40,20 @@ namespace AspNetCoretest.Controllers
             return View(unit);
         }
 
-        public IActionResult Details()
-        {
-            Unit unit = new Unit() 
-            {
-                Id = 1,
-                Title = "Learning ASP.NET Core 2.0",
-                Genre = "Programming & Software Development",
-                Price = 45,
-                PublishDate = new System.DateTime(2012, 04, 23),
-                Authors = new List<string> { "Jason De Oliveira", "Michel Bruchet" }
-            }; 
-            
+        public IActionResult Details(Unit unit)
+        { 
+                unit.Id = 1;
+                unit.Title = "Learning ASP.NET Core 2.0";
+                unit.Genre = "Programming & Software Development";
+                unit.Price = 45;
+                unit.PublishDate = new System.DateTime(2012, 04, 23);
+                unit.Authors = new List<string> { "Jason De Oliveira", "Michel Bruchet" };
+            string wwwPath = this.Environment.WebRootPath;
+            string cc = CultureInfo.CurrentCulture.Name;
+            if (cc.IndexOf("en") != -1)
+                unit.sourceWebInt = Path.Combine(wwwPath, "data", "WebInt.txt");
+            else
+                unit.sourceWebInt = Path.Combine(wwwPath, "data", "WebInt.ru.txt");            
             return View(unit);
         }
     }
