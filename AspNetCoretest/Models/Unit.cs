@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 
@@ -10,6 +11,13 @@ namespace AspNetCoretest.Models
 {
     public class Unit
     {
+        int[] numb = {1,5,7,9,10 };
+        void myIe() 
+        {
+            IEnumerator ie = numb.GetEnumerator();
+            //return numb.GetEnumerator();            
+        }
+        enum Cars {tobik, bobik, mobik }
         public string sourceWebInt { get; set; } //Webinterface descr textfile
         public string sourceDesktopFile { get; set; }//Desktop descr textfile
         public string sourceFile { get; set; } 
@@ -22,5 +30,6 @@ namespace AspNetCoretest.Models
         public List<string> Authors { get; set; }
         public decimal Price { get; set; }
         public DateTime PublishDate { get; set; }
+
     }
 }
