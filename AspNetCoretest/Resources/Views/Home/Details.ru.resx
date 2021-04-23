@@ -127,7 +127,7 @@
     <value>Нажмите на кнопку ниже чтобы открыть варианты дистанционного управления</value>
   </data>
   <data name="Contents" xml:space="preserve">
-    <value>Содержание:</value>
+    <value>Содержание:(левым щелчком мыши открывайте/закрывайте разделы ниже)</value>
   </data>
   <data name="Description" xml:space="preserve">
     <value>Описание проекта</value>

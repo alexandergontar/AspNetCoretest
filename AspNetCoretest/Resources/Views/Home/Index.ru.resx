@@ -118,7 +118,8 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Description" xml:space="preserve">
-    <value>Сайт в стадии разработки, некоторые разделы не закончены</value>
+    <value>Для доступа к исходному коду сайта нажмите на сний значок "&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;" внизу страницы,
+</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>Добро пожаловать на сайт домашней автоматизации</value>

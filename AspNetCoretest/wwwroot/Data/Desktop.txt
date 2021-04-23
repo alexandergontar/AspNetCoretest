@@ -1,1 +1,9 @@
 Desktop.
+Here above we can see a desktop application for remote control of the climat
+device. The Monitor/Stop button is used for continuous monitoring.
+It's interface is rather intuitive and self descriptive. The Wi-Fi button is not used
+in this project. You can find the Microsoft Visual Studio project of it at the following link:
+https://github.com/alexandergontar/ClientSocket/tree/main/ClientSocket/ClientSocket
+or just click on blue ">>>>>>>>>>>>>" below.
+Those who don't want to modify it with the Microsoft Visual Studio may go directly to the Release folder
+and launch it by clicking the ClientSocket.exe file.

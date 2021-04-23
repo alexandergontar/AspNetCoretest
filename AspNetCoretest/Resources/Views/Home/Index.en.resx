@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Description" xml:space="preserve">
-    <value>This site is under construction now, some sections are not complete. </value>
+    <value>To see the site's source code click on the blue "&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;" sign at the bottom.</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>Welcome to the Home Automation Site</value>

@@ -1,14 +1,15 @@
 The Web Interface.
 It allows remote control through a Web browser of a PC, Laptop or a mobile device.
 The initial connection to a local Wi-Fi network is also established through it.
-Для этого необходимо включить устройство,
-Подключиться к нему в режиме точки доступа (название сети будет начинаться с ESP8266..)
-Пароль находится в исходном С++ коде в описании, строка 94:
+To do this power up the microcontroller. Connect to it in AP mode 
+(SSID starts with ESP8266..). 
+Find the security key in the controller  C++ source code line 94:
  WiFi.softAP("ESP8266", "yourpassword");
-После подключения, в адресной строке браузера набрать: 192.168.4.1
-появится веб-интерфейс управления(см. фото). 
-Для подключения к местной Wi-Fi сети  нажмите кнопку Wi-Fi options, введите
-имя и пароль вашей сети, нажмите Save. После этого, надо подождать несколько секунд, пока
-обновляется веб страница. Затем в случае удачногого соединения появится IP-адрес подключения
-к локальной сети, либо код ошибки подключения. После этого можно отключиться от точки доступа и зайти
-на устройстово уже из локльной сети по указанному адресу подключения.
+As connection has been established type "192.168.4.1" in your browser's url field 
+and you'll see a web page (see pic. below). 
+To connect to a local Wi-Fi network click on the Wi-Fi options button, enter
+the SSID and password of your network and click on Save. After that wait a few seconds while the web page
+is refreshing. If connection is success an IP-address of the microcontroller in the local Wi-Fi
+network will be displayed. Otherwise you'll see an error code.
+Now you can close the AP connection and reconnect to the device
+in your local network at the displayed address. 
