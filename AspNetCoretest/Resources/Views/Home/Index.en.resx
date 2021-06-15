@@ -117,8 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Click" xml:space="preserve">
+    <value>Click here to see the source of this site</value>
+  </data>
   <data name="Description" xml:space="preserve">
-    <value>To see the site's source code click on the blue "&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;" sign at the bottom.</value>
+    <value>This site devoted to some home automation projects.  Some sections are not complete.</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>Welcome to the Home Automation Site</value>

@@ -56,5 +56,16 @@ namespace AspNetCoretest.Controllers
                 unit.sourceWebInt = Path.Combine(wwwPath, "data", "WebInt.ru.txt");            
             return View(unit);
         }
+        public IActionResult Xamarin(Unit unit)
+        {
+            string wwwPath = this.Environment.WebRootPath;
+            string cc = CultureInfo.CurrentCulture.Name;
+            if (cc.IndexOf("en") != -1)
+                unit.sourceDesktopFile = Path.Combine(wwwPath, "data", "Desktop.txt");
+            else
+                unit.sourceDesktopFile = Path.Combine(wwwPath, "data", "Desktop.ru.txt");
+            unit.Id = 113;
+            return View(unit);
+        }
     }
 }

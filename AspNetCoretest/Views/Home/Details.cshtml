@@ -107,7 +107,7 @@
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a asp-area="" asp-controller="Arduino" asp-action="Details">@localizer["Web"]</a>
     <a asp-area="" asp-controller="Arduino" asp-action="Desktop">@localizer["Desktop"]</a>    
-    <a href="#">@localizer["Xamarin"]</a>
+    <a asp-area="" asp-controller="Arduino" asp-action="Xamarin">@localizer["Xamarin"]</a>
     <a href="#">Contact</a>
 </div>
 
@@ -134,7 +134,7 @@
 <p style="color:blue">@localizer["Contents"]</p>
 <button type="button" class="collapsible">@localizer["Introduction"]</button>
 <div class="content">
-    <pre style="font-weight: bold">@content1</pre>
+    <pre style="font-weight: bold; color:green; border-left:2px solid">@content1</pre>
 </div>
 
 <p>@localizer["Esp"]</p>
@@ -148,11 +148,10 @@
 <div class="content">
     <figure>
         <figcaption>Wi-FiWebAP.ino file</figcaption>
-        <pre class="nmb">
+        <pre class="nmb">@content 
        <!-- <code contenteditable spellcheck="false">-->
-@content 
         <!-- </code>-->
-  </pre>
+        </pre>
     </figure>
 </div>
 <button type="button" class="collapsible">Open Section 3</button>
