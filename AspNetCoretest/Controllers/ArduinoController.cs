@@ -61,9 +61,9 @@ namespace AspNetCoretest.Controllers
             string wwwPath = this.Environment.WebRootPath;
             string cc = CultureInfo.CurrentCulture.Name;
             if (cc.IndexOf("en") != -1)
-                unit.sourceDesktopFile = Path.Combine(wwwPath, "data", "Desktop.txt");
+                unit.sourceXamarinFile = Path.Combine(wwwPath, "data", "Xamarin.txt");
             else
-                unit.sourceDesktopFile = Path.Combine(wwwPath, "data", "Desktop.ru.txt");
+                unit.sourceXamarinFile = Path.Combine(wwwPath, "data", "Xamarin.ru.txt");
             unit.Id = 113;
             return View(unit);
         }

@@ -19,7 +19,8 @@ namespace AspNetCoretest.Models
         }
         enum Cars {tobik, bobik, mobik }
         public string sourceWebInt { get; set; } //Webinterface descr textfile
-        public string sourceDesktopFile { get; set; }//Desktop descr textfile
+        public string sourceDesktopFile { get; set; } //Desktop descr textfile
+        public string sourceXamarinFile { get; set; } // Xamarin mobile descr textfile
         public string sourceFile { get; set; } 
         public string sourceFile1 { get; set; }
         public string Firstrequest { get; set; }//cookies
