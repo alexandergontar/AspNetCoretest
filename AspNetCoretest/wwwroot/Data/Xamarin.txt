@@ -1,1 +1,6 @@
-Xamarin English
+Here is a crossplatform mobile application based on a Xamarin framework.
+The interface is quite simple and self explainatory. There are two toggle switches
+in the "Settings" menu:
+Auto mode - to set a temperarure setpoint and 
+Monitor mode - for continuous temperature/humidity monitoring.
+Click the link below to access the project source files.
