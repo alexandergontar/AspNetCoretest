@@ -25,14 +25,22 @@
     <h3>@localizer["Description"]</h3>
     <br><br><br><br><br><br><br><br>
 
-         <h5 style="color:lightseagreen">@mesg</h5>
-         <h5 style="color:lightseagreen">@mesg2</h5>
+    <h5 style="color:lightseagreen">@mesg</h5>
+    <h5 style="color:lightseagreen">@mesg2</h5>
 </div>
 <!--<input id="Submit1" type="submit" value="submit" onclick="avgs()"/>-->
+<div id="panel">Control Panel</div>
 <br>
-<br>
+<div class="grid">
+    <div id="div1" style="width:80px; height:80px; background-color:blue;">
+    </div>
+    <div id="div2" style="width:80px; height:80px; background-color:red;">
+    </div>
+    <div id="div3" style="width:80px; height:80px; background-color:green;">
+    </div>
+</div>
 <p class="aligncenter">
-    
+
 </p>
 <a href="https://github.com/alexandergontar/AspNetCoretest/tree/go_further/AspNetCoretest"
    style="font-weight: bold; font-size: 18px">
@@ -44,4 +52,32 @@
             alert("Clicked!" + i.toString());
         }
     }
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+          var count = 0;
+    $(document).ready(
+        function () {
+  
+            //for (var i = 0; i < 10; i++)
+             while(count<1000)
+            { 
+                if (count % 2 == 0)
+                {
+                $("#div1").fadeOut(1000);
+                $("#div2").fadeOut("slow");
+                $("#div3").fadeOut();
+                }
+                else
+                {
+                $("#div1").fadeIn(1000);
+                $("#div2").fadeIn("slow");
+                $("#div3").fadeIn();
+                }
+                 count++;
+                 //if (count == 8) count = 0;
+            }
+        }
+    );
+    //document.location.reload();
 </script>
